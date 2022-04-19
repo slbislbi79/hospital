@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+$c-green : #00878c;
+$c-orange : #f68b1f;
+$c-dark1 : #333333;
+$c-dark2 : #636363;
+$c-gray : #d6d6d6;
+$c-lightgray : #f8f8f8;
+
+$imgsrc: '../images/';
+
+//테이블 
+$thead-topline : 2px solid #636363;
+$thead-th :  #f8f8f8;
+$td-line : #d6d6d6;
+$td-hover: #fcfcfc;
+
+
+
+//검색
+$border: #becccd;
+$bgcolor: #f6fdfd;
+
+//탭
+//default 
+$tab_bgcolor: #f8f8f8 ;
+$tan_border: #0a0a0a;
+
+$tab_active : #636363; 
+$tab_active : #636363; 
+
+
+
+// $side_menus: (a1,a2,a3,a4,a5,a6,a7);
+// @each $side_menu in $side_menus {
+//     .type_#{$side_menu} {
+//         &:before {
+//             background-image: url($imgsrc + cont/type_#{$side_menu} + ".png");
+//         }
+//     }
+// }
+ 

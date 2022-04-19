@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@500;700;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #333333;
+}
+
+p {
+  display: block;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.col-1 {
+  flex: 1 1 10%;
+}
+
+.col-2 {
+  flex: 1 1 20%;
+}
+
+.col-3 {
+  flex: 1 1 25%;
+}
+
+.col-4 {
+  flex: 1 1 33.33%;
+}
+
+.col-8 {
+  flex: 1 1 66.66%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+aside {
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #aaa;
+}
+
+.contents {
+  padding: 0 0 0 240px;
+}
+
+.main-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-slider-wrap .point_top {
+  font-size: 40px;
+  color: #00878c;
+}
+.main-slider-wrap .point_top .t_en {
+  font-weight: 900;
+  font-size: 50px;
+}
+.main-slider-wrap .title {
+  font-size: 70px;
+  color: #333333;
+  font-weight: 900;
+}
+.main-slider-wrap .desc_big {
+  font-size: 22px;
+  line-height: 34px;
+  color: #636363;
+}
+.main-slider-wrap .bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t_en {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-base {
+  display: inline-block;
+  border: 1px solid #00878c;
+  color: #00878c;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.round {
+  border-radius: 30px;
+}
+
+.quick-link-wrap ul li {
+  display: inline-block;
+}
+.quick-link-wrap ul li a p:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quick-link-wrap .link1:before {
+  background-image: url("../images/quick_tab_1.png");
+}
+.quick-link-wrap .link2:before {
+  background-image: url("../images/quick_tab_2.png");
+}
+.quick-link-wrap .link3:before {
+  background-image: url("../images/quick_tab_3.png");
+}
+.quick-link-wrap .link4:before {
+  background-image: url("../images/quick_tab_4.png");
+}
+.quick-link-wrap .link5:before {
+  background-image: url("../images/quick_tab_5.png");
+}

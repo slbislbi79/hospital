@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+
+//반응형 세팅
+$breakpoint-mobile-s: 330px;
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 840px;
+$breakpoint-desktop: 1280px;
+
+@mixin desktop {
+  @media screen and (min-width: #{$breakpoint-desktop }) {
+    @content;
+  }
+}
+@mixin tablet {
+    @media screen and (max-width: #{$breakpoint-tablet }) {
+      @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: #{$breakpoint-mobile}) {
+      @content;
+    }
+}
+  
+@mixin mobile-s {
+    @media screen and (max-width: #{$breakpoint-mobile-s }) {
+      @content;
+    }
+}
+
+//이미지경로
+$imgsrc : '/common/images/';
+
+//each 
+
+// $side_menus: (all, select);
+// @each $side_menu in $side_menus {
+//     .type_#{$side_menu} {
+//         &:before {
+//             background-image: url($imgsrc + cont/type_#{$side_menu} + ".png");
+//         }
+//     }
+// }
+
+
+//for문
+
+// @for $i from 1 to 13 {
+//     .tab-quote-#{$i} {
+//         &:before {
+//             background-image: url('cont/detail_cont' + #{$i} + '.png')
+//         }    
+//     }
+// }
+
+
+//mixin if
+
+// @mixin ell($line: 1) {
+//     @if ($line==1) {
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         white-space: nowrap;
+//     }
+//     @else {
+//         display: -webkit-box;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         -webkit-box-orient: vertical;
+//         -webkit-line-clamp: $line;
+//     }
+// }
