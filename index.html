@@ -11,35 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" type="text/css" href="http://devp.gapiasite.com:88/css/slick.css">
     <link rel="stylesheet" href="common/css/common.css">
 
     <script src="common/js/jquery-1.11.0.min.js"></script>
     <script src="common/js/jquery-ui.min.js"></script>
     <script src="common/js/slick.min.js"></script>
+    <script>
+			
+		$(function() {
+			$('.main-slider-wrap ul').slick({
+				dots: true,
+				arrows: false,
+				autoplay: true
+			});
+            
+			var info_slide = $('.main-slider-wrap ul');
+			var items = $(".main-slider-wrap ul li").length;
+			info_slide.on('beforeChange', function (event, slick, direction) {
+				var item = $(event.currentTarget).find(".slick-dots .slick-active").index();
+                $("body").attr('style', 'background-image:url(common/images/main_slide_bg' + (item + 1) + '.jpg');
+            });
+        });
+    </script>
 </head>
 
-<body>
+<body class="main" style="background-image: url(common/images/main_slide_bg1.png);">
     <header></header>
     <aside></aside>
     <div class="contents">
+        <!-- <div class="main_bg">
+            <span class="visual_bg" style="background-image: url(common/images/main_slide_bg1.png);"></span>
+            <span class="visual_bg" style="background-image: url(common/images/main_slide_bg1.png);"></span>
+            <span class="visual_bg" style="background-image: url(common/images/main_slide_bg1.png);"></span>
+        </div> -->
         <div class="main-flex-wrap">
-            <div class="col-8">
-                <div class="main-slider-wrap">
+                <div class="main-slider-wrap" >
                     <ul>
                         <li>
                             <div class="point_top">서울아산병원만의 기준_ <span class="t_en">AGS</span> </div>
                             <div class="title"><span class="t_en">Asan Global Standard</span></div>
                             <div class="desc_big">
-                                국제적인 수준의 의료의 질 향상 및 환자안전에 대한
+                                국제적인 수준의 의료의 질 향상 및 환자안전에 대한 <br>
                                 서울아산병원의 기준을 제시합니다.
                             </div>
                             <a href="#" class="btn-base round">자세히보기</a>
-                            <span class="bg"></span>
+                            
+                        </li>
+                        <li>
+                            <div class="point_top">서울아산병원만의 기준_ <span class="t_en">AGS</span> </div>
+                            <div class="title"><span class="t_en">Asan Global Standard</span></div>
+                            <div class="desc_big">
+                                국제적인 수준의 의료의 질 향상 및 환자안전에 대한 <br>
+                                서울아산병원의 기준을 제시합니다.
+                            </div>
+                            <a href="#" class="btn-base round">자세히보기</a>
+                        </li>
+                        <li>
+                            <div class="point_top">서울아산병원만의 기준_ <span class="t_en">AGS</span> </div>
+                            <div class="title"><span class="t_en">Asan Global Standard</span></div>
+                            <div class="desc_big">
+                                국제적인 수준의 의료의 질 향상 및 환자안전에 대한 <br>
+                                서울아산병원의 기준을 제시합니다.
+                            </div>
+                            <a href="#" class="btn-base round">자세히보기</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-4">
+            <div class="board-wrap">
                 <!-- notice -->
                 <div class="notice-wrap">
                     <div class="top-area">
@@ -57,12 +96,12 @@
                 </div>
                 <!-- qna link -->
                 <div class="quick-link-wrap">
-                    <a href="#">자주하는 질문</a>
-                    <a href="#">질문과 답변</a>
+                    <a href="#" class="qna_1">자주하는 질문</a>
+                    <a href="#" class="qna_2">질문과 답변</a>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="quick-link-wrap">
+            <div class="link-bottom-area">
+                <div class="quick-link-wrap2">
                     <ul>
                         <li>
                             <a href="#">
